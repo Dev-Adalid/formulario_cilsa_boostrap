@@ -34,3 +34,41 @@ function contraste() {
     colorButtonsContraste();
     colorAppContraste();
 }
+
+
+function colorInputsEstilo1(){
+    var index = 0, length = inputs.length;
+    for ( ; index < length; index++) {
+        inputs[index].style.backgroundColor = "white";
+    }
+}
+
+function colorButtonsEstilo1(){
+    var index = 0, length = buttons.length;
+    for ( ; index < length; index++) {
+        buttons[index].classList.add("btn-primary");
+        buttons[index].classList.remove("btn-warning");
+    }
+}
+
+
+function colorAppEstilo1() {
+    let fondoForm=document.getElementById("forma");
+    let fondoApp=document.getElementById("app");
+    let titulo=document.querySelector("h2");
+    fondoApp.classList.add("bg-light");
+    fondoApp.classList.remove("bg-black");
+    fondoForm.classList.add("bg-white");
+    fondoForm.classList.remove("bg-dark");
+    titulo.style.color ="black";
+    fondoForm.style.color="black";
+    
+}
+
+
+
+function estilo1() {
+    colorInputsEstilo1();
+    colorButtonsEstilo1();
+    colorAppEstilo1();
+}
